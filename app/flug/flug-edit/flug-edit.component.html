@@ -1,0 +1,34 @@
+<h1>FlugEdit</h1>
+
+<div *ngIf="message" style="color:red; font-weight: bold">
+    {{message}}
+</div>
+
+<div class="form-group">
+    <label>Id</label>
+    <input class="form-control"
+           [(ngModel)]="flug.id">
+    <div>Leere Id oder 0 für neuen Datensatz</div>
+</div>
+
+<div class="form-group">
+    <label>Von</label>
+    <input class="form-control"
+           [(ngModel)]="flug.abflugort">
+</div>
+
+<div class="form-group">
+    <label>Von</label>
+    <input class="form-control"
+           [(ngModel)]="flug.zielort">
+</div>
+
+<div class="form-group">
+    <label>Datum</label>
+    <input class="form-control"
+           [(ngModel)]="flug.datum">
+</div>
+
+<div class="form-group">
+    <button class="btn btn-primary" (click)="save()">Speichern</button>
+</div>

@@ -1,0 +1,83 @@
+<h1>Flug suchen!!!</h1>
+<form #f="ngForm">
+
+    <div class="form-group">
+        <label>Von:</label>
+        <input
+                [(ngModel)]="von"
+                name="von"
+                class="form-control"
+                required
+                ort="Graz,München,Hamburg,Frankfurt,Zürich,Wien"
+                xortAsync
+                minlength="3"
+                maxlength="30"
+                pattern="^\w+$">
+    </div>
+
+    <div *ngIf="!f?.controls['von']?.valid">
+        Fehlerhafte Eingabe!
+    </div>
+
+    <div *ngIf="f?.controls['von']?.hasError('required')">
+        Pflichtfeld!
+    </div>
+
+    <div *ngIf="f?.controls['von']?.hasError('minlength')">
+        Muss min. 3 Zeichen haben!
+    </div>
+
+    <div *ngIf="f?.controls['von']?.hasError('maxlength')">
+        Darf max. 3 Zeichen haben!
+    </div>
+
+    <div *ngIf="f?.controls['von']?.hasError('pattern')">
+        Nur Buchstaben erlaubt!
+    </div>
+
+    <div *ngIf="f?.controls['von']?.hasError('ort')">
+        Ort existiert nicht! (Mögliche Werte: Graz, Hamburg)
+    </div>
+
+    <div *ngIf="f?.controls['von']?.hasError('ortAsync')">
+        Ort wird nicht angeflogen! (Mögliche Werte: Graz, Hamburg)
+    </div>
+
+    <div *ngIf="f?.controls['von']?.pending">
+        <marquee>
+            Validierung wird durchgeführt!
+        </marquee>
+    </div>
+
+    <div class="form-group">
+        <label>Nach:</label>
+        <input [(ngModel)]="nach" name="nach" class="form-control">
+    </div>
+
+    <div class="form-group">
+
+        <button class="btn btn-primary"
+                (click)="suchen()" [disabled]="!von || !nach">
+            Suchen!
+        </button>
+
+    </div>
+
+    <table class="table table-striped">
+        <tr *ngFor="let flug of fluege" [class.active]="flug == selectedFlug">
+            <td>{{flug.id}}</td>
+            <td>{{flug.datum | date:'dd.MM.yyyy' }}</td>
+            <td>{{flug.abflugort | city }}</td>
+            <td>{{flug.zielort | city }}</td>
+            <td>
+                <a (click)="select(flug)">Auswählen</a> |
+                <a [routerLink]="['../flug-edit', flug.id]">Edit</a>
+            </td>
+        </tr>
+    </table>
+
+</form>
+<pre>Warenkorb
+----------------------
+{{ selectedFlug | json }}
+</pre>

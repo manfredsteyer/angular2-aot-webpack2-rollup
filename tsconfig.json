@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "outDir": "dist/unbundled",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "types": [
+      "es6-shim",
+      "node",
+      "jasmine"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
