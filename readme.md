@@ -16,3 +16,7 @@ npm start
 
 After starting the server and the browser, run one of the following index-files. Each of them starts one of the above mentioned scenarios:
 
+- index.jit.html (Webpack build + JIT)
+- index.aot.html (Webpack build + AOT)
+- index.rollup.aot.html (Rollup + AOT)
+
