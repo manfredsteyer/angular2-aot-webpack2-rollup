@@ -224,6 +224,6 @@ class _View_FlugBuchenComponent0 extends import1.AppView<import3.FlugBuchenCompo
   }
 }
 export function viewFactory_FlugBuchenComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import2.AppElement):import1.AppView<import3.FlugBuchenComponent> {
-  if ((renderType_FlugBuchenComponent === (null as any))) { (renderType_FlugBuchenComponent = viewUtils.createRenderComponentType('c:/Users/Manfred/Documents/beratung/angular2/src/rc5/aot/app/flug/flug-buchen/flug-buchen.component.html',0,import10.ViewEncapsulation.None,styles_FlugBuchenComponent,{})); }
+  if ((renderType_FlugBuchenComponent === (null as any))) { (renderType_FlugBuchenComponent = viewUtils.createRenderComponentType('c:/Users/Manfred/Documents/artikel/Blog/angular2-aot/aot/app/flug/flug-buchen/flug-buchen.component.html',0,import10.ViewEncapsulation.None,styles_FlugBuchenComponent,{})); }
   return new _View_FlugBuchenComponent0(viewUtils,parentInjector,declarationEl);
 }

@@ -80,6 +80,6 @@ class _View_HomeComponent0 extends import1.AppView<import3.HomeComponent> {
   }
 }
 export function viewFactory_HomeComponent0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement):import1.AppView<import3.HomeComponent> {
-  if ((renderType_HomeComponent === (null as any))) { (renderType_HomeComponent = viewUtils.createRenderComponentType('c:/Users/Manfred/Documents/beratung/angular2/src/rc5/aot/app/home/home.component.ts class HomeComponent - inline template',0,import8.ViewEncapsulation.None,styles_HomeComponent,{})); }
+  if ((renderType_HomeComponent === (null as any))) { (renderType_HomeComponent = viewUtils.createRenderComponentType('c:/Users/Manfred/Documents/artikel/Blog/angular2-aot/aot/app/home/home.component.ts class HomeComponent - inline template',0,import8.ViewEncapsulation.None,styles_HomeComponent,{})); }
   return new _View_HomeComponent0(viewUtils,parentInjector,declarationEl);
 }

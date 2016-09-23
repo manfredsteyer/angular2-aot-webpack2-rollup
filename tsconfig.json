@@ -9,8 +9,7 @@
     "moduleResolution": "node",
     "types": [
       "es6-shim",
-      "node",
-      "jasmine"
+      "node"
     ]
   },
   "exclude": [

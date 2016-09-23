@@ -2,5 +2,8 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$" libraries="{aot/node_modules}" />
+    <file url="file://$PROJECT_DIR$/aot" libraries="{aot/aot/node_modules}" />
+    <file url="file://$PROJECT_DIR$/dist/unbundled-aot/aot" libraries="{aot/dist/unbundled-aot/aot/node_modules}" />
+    <file url="file://$PROJECT_DIR$/dist/unbundled/aot" libraries="{aot/dist/unbundled/aot/node_modules}" />
   </component>
 </project>

@@ -287,11 +287,6 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         }
         ,
         {
-          path: 'flug-buchen',
-          loadChildren: 'app/flug/flug.module#FlugModule'
-        }
-        ,
-        {
           path: '**',
           redirectTo: 'home'
         }

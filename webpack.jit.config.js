@@ -8,7 +8,6 @@ module.exports = {
     debug: true,
     devtool: 'source-map',
     */
-    debug: false,
     devtool: false,
     entry: {
         'polyfills': './app/polyfills',
@@ -20,7 +19,7 @@ module.exports = {
         publicPath: "dist/"
     },
     resolve: {
-        extensions: ['', '.ts', '.js', '.jpg', '.jpeg', '.gif', '.png', '.css', '.html']
+        extensions: ['.ts', '.js', '.jpg', '.jpeg', '.gif', '.png', '.css', '.html']
     },
     module: {
         loaders: [
@@ -31,7 +30,6 @@ module.exports = {
             { test: /\.ts$/, loaders: ['angular2-template-loader', 'awesome-typescript-loader'], exclude: /node_modules/}
         ]
     },
-    modulesDirectories: ['node_modules'],
     plugins: [
         /*
         new webpack.LoaderOptionsPlugin({

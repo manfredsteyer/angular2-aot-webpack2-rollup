@@ -5,7 +5,6 @@ var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 
 module.exports = {
 
-    debug: false,
     profile: true,
     devtool: false,
     entry: {
@@ -18,7 +17,7 @@ module.exports = {
         publicPath: "dist/"
     },
     resolve: {
-        extensions: ['', '.ts', '.js', '.jpg', '.jpeg', '.gif', '.png', '.css', '.html']
+        extensions: ['.ts', '.js', '.jpg', '.jpeg', '.gif', '.png', '.css', '.html']
     },
     module: {
         loaders: [
@@ -30,7 +29,6 @@ module.exports = {
         ],
         exprContextCritical: false,
     },
-    modulesDirectories: ['node_modules'],
     plugins: [
         new webpack.LoaderOptionsPlugin({
             minimize: true,

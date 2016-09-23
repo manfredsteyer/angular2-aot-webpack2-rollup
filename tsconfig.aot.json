@@ -15,13 +15,12 @@
     "noImplicitReturns": false,
     "noImplicitUseStrict": false,
     "noFallthroughCasesInSwitch": true,
-    "outDir": "./dist/unbundled-aot",
-    "types": [
-      "es6-shim",
-      "node",
-      "jasmine"
-    ]
+    "outDir": "./dist/unbundled-aot"
   },
+  "types": [
+      "es6",
+      "node"
+    ],
   "exclude": [
     "node_modules",
     "dist"

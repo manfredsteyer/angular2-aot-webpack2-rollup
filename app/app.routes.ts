@@ -12,12 +12,13 @@ export const ROUTE_CONFIG: Routes = [
         component: HomeComponent
     },
 
+/*
     {
         path: 'flug-buchen',
         // loadChildren: () => System.import('./flug/flug.module').then(m => m.FlugModule)
         loadChildren: 'app/flug/flug.module#FlugModule'
     },
-
+*/
     {
         path: '**',
         redirectTo: 'home'

@@ -80,6 +80,6 @@ class _View_PassagierSuchenComponent0 extends import1.AppView<import3.PassagierS
   }
 }
 export function viewFactory_PassagierSuchenComponent0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement):import1.AppView<import3.PassagierSuchenComponent> {
-  if ((renderType_PassagierSuchenComponent === (null as any))) { (renderType_PassagierSuchenComponent = viewUtils.createRenderComponentType('c:/Users/Manfred/Documents/beratung/angular2/src/rc5/aot/app/flug/passagier-suchen/passagier.suchen.component.ts class PassagierSuchenComponent - inline template',0,import8.ViewEncapsulation.None,styles_PassagierSuchenComponent,{})); }
+  if ((renderType_PassagierSuchenComponent === (null as any))) { (renderType_PassagierSuchenComponent = viewUtils.createRenderComponentType('c:/Users/Manfred/Documents/artikel/Blog/angular2-aot/aot/app/flug/passagier-suchen/passagier.suchen.component.ts class PassagierSuchenComponent - inline template',0,import8.ViewEncapsulation.None,styles_PassagierSuchenComponent,{})); }
   return new _View_PassagierSuchenComponent0(viewUtils,parentInjector,declarationEl);
 }
