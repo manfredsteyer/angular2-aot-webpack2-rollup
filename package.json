@@ -6,7 +6,7 @@
     "build-all": "npm run webpack:jit && npm run webpack:aot && npm run rollup:aot",
     "webpack:aot": "ngc -p tsconfig.aot.json --locale=en-US && webpack --config webpack.aot.config.js",
     "webpack:jit": "webpack --config webpack.jit.config.js",
-    "rollup:aot": "ngc -p tsconfig.aot.json --locale=en-US && .\\node_modules\\.bin\\rollup -c rollup.js",
+    "rollup:aot": "ngc -p tsconfig.aot.json --locale=en-US && ./node_modules/rollup/bin/rollup -c rollup.js",
     "start": "live-server",
     "tsc": "tsc",
     "ngc": "ngc -p tsconfig.aot.json --locale=en-US"
